@@ -1,27 +1,25 @@
 # Shell Scripting Learning
 ## 1. Intruduction
-Linux operation system needed
+Linux operation system needed.
 #### What is shell?
 Unix shell program interprets (not compile) user commands which are either directly entered by the user or which can be read from a file called the shell script or shell program.
 
 #### bash shell scripting 
-￥￥ctrl+alt+T￥￥: open terminal
-serach shell types: cat /etc/shells
-bash-bourne-again shell
-know where bash are located: which bash
-clear screen: clear
+bash: bourne-again shell
+- **ctrl+alt+T**: open terminal
+- cat /etc/shells: serach shell types
+- which bash: know where bash are located
+- clear: clear screen
 
 ##### hello.sh for shell's hello world
-touch hello.sh: create file
-ls -al: check the files' state
+- touch hello.sh: create file
+- ls -al: check the files' state
+- \#! /usr/bin/bash (the location of bash):  help the interpreter to know that this is a bash shell
+- echo "Hello world": use to print 
 
-\#! /usr/bin/bash (the location of bash):  help the interpreter to know that this is a bash shell
-echo "Hello world"
-echo: use to print 
-
-./hello.sh in the terminal
+./hello.sh in the terminal to run the file
 **problem**: when using touch to create a file, it has only read and write permission but not execute permission
-chmod +x hello.sh: change the permission, add x
+- chmod +x hello.sh: change the permission, add x
 ## 2. Variables and Comments
 #### comment
 \# + word: will not be executed
